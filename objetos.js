@@ -54,3 +54,17 @@ function imprimirNombreEnMayuscula (nombre){
     }
     imprimirNombreEnMayuscula(renato)
     imprimirNombreEnMayuscula(maria)
+
+    // se puede desestructurar los mismos objetos
+
+    function imprimirNombreEnMayuscula (persona){ 
+        var nombre = nombre.persona
+        console.log(persona.nombre.toLocaleUpperCase ())
+    }
+
+    // es exactamente igual que:
+
+    function imprimirNombreEnMayuscula (persona){ 
+        var { nombre } = persona
+        console.log(persona.nombre.toLocaleUpperCase ())
+    }
